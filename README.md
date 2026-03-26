@@ -1,9 +1,10 @@
 ## Introduction
 
-| <b>Discipline  | <b>Computer Science and Engineering                           |
-| :------------- | :------------------------------------------------------------ |
-| <b> Lab        | <b> Database Security                                         |
-| <b> Experiment | <b> SQL Injection Attack Simulation and Mitigation Techniques |
+| <b>Discipline  | <b>Computer Science and Engineering                                                    |
+| :------------- | :------------------------------------------------------------------------------------- |
+| <b> Lab        | <b> Database Security                                                                  |
+| <b> Experiment | <b> Configuring Secure Connectivity for Encrypted Client–Server Database Communication |
+|  |
 |                |
 
 ### About the Experiment
