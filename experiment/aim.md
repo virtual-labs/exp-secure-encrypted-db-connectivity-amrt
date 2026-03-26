@@ -1,1 +1,1 @@
-### Aim of the experiment
+To implement secure communication between client and server by encrypting data transmission, and to establish secure channels for database communication in order to prevent eavesdropping and unauthorized access.
