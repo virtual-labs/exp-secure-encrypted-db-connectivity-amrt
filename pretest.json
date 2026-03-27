@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary risk of database communication over an unencrypted channel?",
+      "answers": {
+        "a": "Data corruption",
+        "b": "Eavesdropping (Man-in-the-middle attacks)",
+        "c": "Increased latency",
+        "d": "Storage overflow"
+      },
+      "explanations": {
+        "a": "While data corruption can happen, the primary risk of unencrypted channels mentioned in the theory is interception.",
+        "b": "Correct. Unauthorized actors can intercept and read data in plaintext if the channel is unencrypted.",
+        "c": "Unencrypted channels are often faster but insecure.",
+        "d": "Encryption does not directly impact storage overflow."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these best describes 'Ciphertext'?",
+      "answers": {
+        "a": "Data that is unencrypted and easily readable",
+        "b": "A password used to access a database",
+        "c": "Plaintext data transformed using an algorithm and key",
+        "d": "A special type of database index"
+      },
+      "explanations": {
+        "a": "This describes Plaintext.",
+        "b": "A password is a credential, not the encrypted data itself.",
+        "c": "Correct. Ciphertext is the result of encryption, making it unreadable without a key.",
+        "d": "Ciphertext is not related to database indexing."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the SSL/TLS protocol ensure during data transit?",
+      "answers": {
+        "a": "Only data compression",
+        "b": "Only database performance",
+        "c": "Encryption, Authentication, and Integrity",
+        "d": "Only user authorization"
+      },
+      "explanations": {
+        "a": "SSL/TLS provides much more than compression; it provides security.",
+        "b": "SSL/TLS actually adds a small overhead to performance.",
+        "c": "Correct. These are the three key properties of SSL/TLS as stated in the theory.",
+        "d": "Authorization is checking permissions; SSL/TLS handles Authentication (identity)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In secure communication, what is the purpose of the 'Handshake'?",
+      "answers": {
+        "a": "To close the connection securely",
+        "b": "To establish cryptographic settings and keys before data transfer",
+        "c": "To back up the database data",
+        "d": "To authenticate the user's password"
+      },
+      "explanations": {
+        "a": "The handshake happens at the start, not the end.",
+        "b": "Correct. It initiates the request, proves identity, and exchanges keys.",
+        "c": "Handshake is about communication security, not backups.",
+        "d": "Handshake authenticates the 'parties' (server/client) identity, often via certificates."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the handshake process, what is sent by the server to prove its identity?",
+      "answers": {
+        "a": "Plaintext data",
+        "b": "A Digital Certificate",
+        "c": "The session key",
+        "d": "A database query"
+      },
+      "explanations": {
+        "a": "Plaintext data is what we are trying to protect.",
+        "b": "Correct. Servers send digital certificates (signed by a CA) to prove who they are.",
+        "c": "The session key is derived after identity is verified.",
+        "d": "Queries are sent during the encrypted data phase."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

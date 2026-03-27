@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which property of SSL/TLS ensures that data has not been modified during transit?",
+      "answers": {
+        "a": "Encryption",
+        "b": "Authentication",
+        "c": "Integrity",
+        "d": "Availability"
+      },
+      "explanations": {
+        "a": "Encryption is about hiding data from observers.",
+        "b": "Authentication is about verifying identities.",
+        "c": "Correct. Integrity ensures that data has not been tampered with or modified during transit.",
+        "d": "Availability is a separate security pillar not specifically handled by SSL/TLS protocols."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the context of the simulation, what is a key feature of Mutual TLS (mTLS)?",
+      "answers": {
+        "a": "Only the server needs a certificate",
+        "b": "Both the client and server verify each other's certificates",
+        "c": "It uses plaintext for faster speed",
+        "d": "It disables the handshake process"
+      },
+      "explanations": {
+        "a": "That is standard one-way TLS.",
+        "b": "Correct. mTLS involves mutual authentication where the server also requests a client certificate.",
+        "c": "mTLS is a cryptographic protocol and does not use plaintext.",
+        "d": "mTLS uses a handshake process to establish identity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is Symmetric Encryption used for data transfer AFTER the handshake is complete?",
+      "answers": {
+        "a": "It is more secure than asymmetric encryption",
+        "b": "It does not require any keys",
+        "c": "It is more efficient for high-volume data transfer",
+        "d": "It allows anyone to decrypt the message"
+      },
+      "explanations": {
+        "a": "Both are secure, but they serve different purposes.",
+        "b": "Symmetric encryption requires a shared session key.",
+        "c": "Correct. Session keys are unique, temporary, and faster for bulk data than the asymmetric methods used in the handshake.",
+        "d": "Only parties with the session key can decrypt it."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is meant by 'End-to-End Encryption' in the context of database connectivity?",
+      "answers": {
+        "a": "Encryption only between the browser and the web server",
+        "b": "Encryption that starts after the data reaches the database",
+        "c": "Ensuring the message is encrypted from the client until it reaches the final database destination",
+        "d": "Encrypting only the headers of a packet"
+      },
+      "explanations": {
+        "a": "This leaves the backend jump (server to DB) potentially vulnerable.",
+        "b": "Encryption must happen before or during transit to be effective.",
+        "c": "Correct. It protects the entire lifecycle of the data across all network hops.",
+        "d": "Full payload encryption is needed for true security."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary purpose of 'Encryption at Rest'?",
+      "answers": {
+        "a": "To speed up database queries",
+        "b": "To ensure data is unreadable even if physical storage or disks are stolen",
+        "c": "To encrypt data while it is moving over the network",
+        "d": "To prevent users from deleting their own data"
+      },
+      "explanations": {
+        "a": "Encryption at rest can slightly slow down disk I/O.",
+        "b": "Correct. It protects stored data files from unauthorized access at the physical layer.",
+        "c": "That is 'Encryption in Transit'.",
+        "d": "This is handled by access control lists (ACLs) or permissions."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}
