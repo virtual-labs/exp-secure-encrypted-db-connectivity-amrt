@@ -1,6 +1,6 @@
 
 
-## Stage 1: No SSL/TLS (HTTP)
+### Stage 1: No SSL/TLS (HTTP)
 In this stage, communication between the client and the server occurs over an unencrypted channel.
 
 <div><img src="./images/tls1.png" ></div>
@@ -13,7 +13,7 @@ In this stage, communication between the client and the server occurs over an un
 
 4.  **Result**: An eavesdropper monitoring the network can easily read the sensitive data being transmitted.
 
-## Stage 2: SSL/TLS Handshake & Certificate
+### Stage 2: SSL/TLS Handshake & Certificate
 This stage demonstrates the process of establishing a secure connection.
 
 <div><img src="./images/tls4.png" ></div>
@@ -23,7 +23,7 @@ This stage demonstrates the process of establishing a secure connection.
 3.  **Authentication**: The server presents its **Digital Certificate** to prove its identity to the client.
 4.  **Identity Verification**: Observe the 'Secure Connection' panel on the right, which will display the **Server Cert** and **Client ID** once verified.
 
-## Stage 3: SSL/TLS with Data Encryption
+### Stage 3: SSL/TLS with Data Encryption
 Once the identity is verified, a secure session is established.
 
 <div><img src="./images/tls6.png" ></div>
@@ -37,7 +37,7 @@ Once the identity is verified, a secure session is established.
 
 5.  **Decryption**: The server uses the shared session key to decrypt and read the message.
 
-## Stage 4: End-to-End SSL/TLS Protection
+### Stage 4: End-to-End SSL/TLS Protection
 The final stage ensures security across the entire ecosystem.
 
 1.  **Click Next**: Proceed to the final stage.
